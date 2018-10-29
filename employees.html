@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="bundle.js"></script>
+</head>
+<body >
+    <div id="employees"></div>
+</body>
+<script>
+    SystemJS.import('Main').then(function (m) {
+        m.default();
+    });
+</script>
+</html>
